@@ -7,7 +7,7 @@ import products from "./data.json";
 // fetch('./data.json').then(res => res.json()).then(products => { ... });
 const app = document.querySelector<HTMLDivElement>("#app");
 
-const image = document.querySelector<HTMLDivElement>("#image");
+// const image = document.querySelector<HTMLDivElement>("#image");
 
 function createProductCard(product: any): HTMLElement {
   const card = document.createElement("div");
