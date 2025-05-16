@@ -29,7 +29,7 @@ function createProductCard(product: any): HTMLElement {
   cartButton.className = "add-to-cart";
 
   const cartIcon = document.createElement("img");
-  cartIcon.src = "/public/assets/images/icon-add-to-cart.svg"; // Make sure this path is correct
+  cartIcon.src = "/public/assets/images/icon-add-to-cart.svg"; 
   cartIcon.alt = "Add to cart";
   cartIcon.className = "cart-icon";
 
