@@ -44,7 +44,7 @@ function createProductCard(product: any): HTMLElement {
 
   if (isInCart) {
     cartButton.classList.add("in-cart");
-    cartSpan.innerText = "In cart";
+    cartSpan.innerText = "Added";
     cartButton.disabled = true;
   }
 
