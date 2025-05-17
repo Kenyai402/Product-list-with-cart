@@ -7,8 +7,30 @@
     <title>Vite + TS</title>
   </head>
   <body>
+    <header>
+      <h1>Desserts</h1>
+      <div id="cart-container" tabindex="0" aria-label="Cart"></div>
+    </header>
     <div id="app">
       <div id="product-list"></div>
+    </div>
+    <div id="cart-modal" class="cart-modal" tabindex="-1" aria-modal="true" aria-labelledby="cart-title" hidden>
+      <div class="cart-modal-content">
+        <h2 id="cart-title">Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-modal-actions">
+          <button id="confirm-order">Confirm Order</button>
+          <button id="reset-order">Start New Order</button>
+          <button id="close-cart" aria-label="Close Cart">&times;</button>
+        </div>
+      </div>
+    </div>
+    <div id="order-confirmation" class="order-confirmation" hidden>
+      <div class="order-confirmation-content">
+        <h2>Order Confirmed!</h2>
+        <p>Thank you for your purchase.</p>
+        <button id="close-confirmation">Close</button>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
